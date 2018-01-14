@@ -8,7 +8,7 @@ from scapy.utils import PcapWriter
 
 def readKeys():
 	keys = []
-	with open("tables/kRO/Zero/keys.txt") as f:
+	with open("keys.txt") as f:
 		for line in f:
 			if '#' not in line:
 				keys.append(int(line.strip(), 16))
@@ -31,7 +31,7 @@ if len(sys.argv) < 3: #No args/not enough args
 	print "[*] Usage: ./ropcap.py <encrypted.pcap> <decrypted.pcap>"
 	exit()
 
-serverIPFilter = '112.175.128.137' #twRO
+serverIPFilter = '112.175.130.71' #kRO:zero
 loginMapFound = False
 
 # calculate pattern that indicate the starting point of key xoring
