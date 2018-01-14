@@ -31,7 +31,7 @@ if len(sys.argv) < 3: #No args/not enough args
 	print "[*] Usage: ./ropcap.py <encrypted.pcap> <decrypted.pcap>"
 	exit()
 
-serverIPFilter = '112.175.130.71' #kRO:zero
+serverIPFilter = '112.175.130.' #kRO:zero
 loginMapFound = False
 
 # calculate pattern that indicate the starting point of key xoring
