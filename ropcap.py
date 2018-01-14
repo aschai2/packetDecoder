@@ -15,7 +15,7 @@ def readKeys():
 	return keys
 
 def readMapLogin():
-	with open("tables/twRO/shuffles.txt") as f:
+	with open("shuffle.txt") as f:
 		for line in f:
 			if 'map_login' in line:
 				return int(line[:4], 16)
